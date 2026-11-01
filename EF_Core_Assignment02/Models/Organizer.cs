@@ -20,5 +20,13 @@ namespace EF_Core_Assignment02.Models
         [MaxLength(150)]
         public string? CompanyName { get; set; }
 
+
+        // Relationship
+        public ICollection<Event> Events { get; set; }
+
+        public OrganizerProfile Profile { get; set; }
+
+
+
     }
 }

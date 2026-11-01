@@ -41,5 +41,10 @@ namespace EF_Core_Assignment02.Models
         [NotMapped]
         public string FullAddress =>$"{Street}, {City}, {Country}, {PostalCode}";
 
+
+        // Relationship
+        public Badge? Badge { get; set; }
+
+
     }
 }
